@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/android:RelativeLayout"
+    tools:context=".MainActivity" android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="611dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblnum2"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <TextView
+        android:id="@+id/lblnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="377dp"
+        android:layout_marginRight="377dp"
+        android:layout_marginBottom="701dp"
+        android:text="@string/num_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="366dp"
+        android:layout_marginRight="366dp"
+        android:layout_marginBottom="619dp"
+        android:text="@string/num_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblnum1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginBottom="687dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblnum1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginRight="218dp"
+        android:onClick="Procesar"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum2" />
+
+    <TextView
+        android:id="@+id/lblresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/lblrespuesta"
+        app:layout_constraintBottom_toTopOf="@+id/btncalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum2"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <RadioGroup
+        android:id="@+id/optOperaciones"
+        android:layout_width="268dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toTopOf="@+id/btncalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum2">
+
+        <RadioButton
+            android:id="@+id/rbnSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/suma" />
+
+        <RadioButton
+            android:id="@+id/rbnResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resta" />
+
+        <RadioButton
+            android:id="@+id/rbnMulti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicaci_n" />
+
+        <RadioButton
+            android:id="@+id/rbnDivicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/divici_n" />
+
+        <RadioButton
+            android:id="@+id/rbnexpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exponente" />
+
+        <RadioButton
+            android:id="@+id/rbnPorcen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/porcentaje" />
+
+        <RadioButton
+            android:id="@+id/rbnMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modulo" />
+
+        <RadioButton
+            android:id="@+id/rbnFactoreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/factoreo" />
+    </RadioGroup>
+
+</>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CalculadoraBasica</string>
+    <string name="Saludo">name="Saludo">Bienvenidos </string>
+    <string name="num_1">Num 1</string>
+    <string name="num_2">Num 2</string>
+    <string name="calcular">Calcular</string>
+    <string name="lblrespuesta">Respuesta</string>
+    <string name="_0">0</string>
+    <string name="__0">0</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicaci_n">Multiplicación</string>
+    <string name="divici_n">Divición</string>
+    <string name="exponente">Exponente</string>
+    <string name="porcentaje">Porcentaje</string>
+    <string name="modulo">Modulo</string>
+    <string name="factoreo">Factoreo</string>
+    <string-array name="Operaciones">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicación</item>
+        <item>División</item>
+        <item>Exponente</item>
+        <item>Porcentaje</item>
+    </string-array>
+</resources>
